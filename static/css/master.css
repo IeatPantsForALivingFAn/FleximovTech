@@ -1,0 +1,20 @@
+.navbar-brand{
+  font-size: 30px;
+}
+.nav-link{
+  font-size: 20px;
+}
+.center{
+  text-align: center;
+  background-color: #ffffff;
+  padding: 10px 10px 10px 10px;
+  margin-top: 100px;
+  margin-left: 330px;
+  width: 38%;
+  border-radius: 20px;
+  background-color: #212529;
+  color: white;
+}
+input{
+  border-radius: 10px;
+}

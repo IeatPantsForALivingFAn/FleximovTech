@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% if user.is_authenticated %}
+  <h1>Name: {{user.first_name}} {{user.last_name}}</h1>
+  <h2>Post List</h2>
+  {% for post in user.posts.all %}
+  <br>
+    <h3><a href="{% url 'posts:post' post.pk %}">{{post.title}}</a></h3>
+  {% endfor %}
+{% else %}
+  <h1>Please Log In</h1>
+
+{% endif %}
+{% endblock %}
