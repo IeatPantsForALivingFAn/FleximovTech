@@ -2,6 +2,7 @@
 
 {% block content %}
 <form method="POST" class='center'>
+  <h4>Sign-Up</h4>
   {% csrf_token %}
   {{form.as_p }}
   <input type="submit" value="SignUp">

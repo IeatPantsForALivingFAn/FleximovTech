@@ -7,14 +7,18 @@
 .center{
   text-align: center;
   background-color: #ffffff;
-  padding: 10px 10px 10px 10px;
-  margin-top: 100px;
+  padding: 30px 10px 30px 10px;
+  margin-top: 70px;
   margin-left: 330px;
-  width: 38%;
+  width: 30%;
   border-radius: 20px;
   background-color: #212529;
   color: white;
 }
 input{
-  border-radius: 10px;
+  border-radius: 5px;
+}
+img {
+  max-width: 500px;
+  height: auto;
 }

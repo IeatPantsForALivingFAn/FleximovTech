@@ -3,7 +3,10 @@
 {% block content %}
   {% if user.is_authenticated %}
   {% for image in post.image.all %}
-  <img src="{{image.image_field.url}}" alt="No image found"  style='margin-top: 20px; border: solid black 2px;'><br>
+  <div class="">
+    <img src="{{image.image_field.url}}" alt="No image found"  style='margin-top: 20px; border: solid black 2px;'><br>
+  </div>
+
   {% endfor %}
   {% else %}
   <h1><a href="{% url 'posts:login' %}">Please Log-In</a></h1>
