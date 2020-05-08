@@ -26,19 +26,3 @@ class UserCreateForm(forms.ModelForm):
 class LoginForm(forms.Form):
     username = forms.CharField(max_length =100,widget=forms.TextInput())
     password = forms.CharField(widget=forms.PasswordInput())
-
-# class PostCreateForm(forms.ModelForm):
-#     class Meta:
-#         model = Post
-#         fields = ['title','image']
-
-#
-# class ImageCreateForm(forms.ModelForm):
-#     class Meta:
-#         model = Image
-#         fields = ['image_field']
-#
-#     def __init__(self,*args,**kwargs):
-#         uploaded_by = kwargs.pop('uploaded_by', None)
-#         super().__init__(*args, **kwargs)
-#         self.fields['uploaded_by'] = User.objects.get(pk =request.pk)
