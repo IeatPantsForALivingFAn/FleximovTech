@@ -9,9 +9,15 @@ class Post(models.Model):
     image = models.ManyToManyField('Image',related_name='image')
 
     def __str__(self):
+        """
+        string representation of each model
+        """
         return self.title
 
     def get_absolute_url(self):
+        """
+        canonical url for each model
+        """
         return reverse('posts:post_detail',args=[self.id])
 
     class Meta:
@@ -22,6 +28,6 @@ class Image(models.Model):
     uploaded_by = models.ForeignKey(User,on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.post.title
+        return 'image '+str(self.id)
     def get_absolute_url(self):
         return reverse('posts:image_detail',args=[self.id])
